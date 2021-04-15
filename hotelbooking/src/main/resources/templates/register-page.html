@@ -1,0 +1,311 @@
+<html xmlns:th="www.thymeleaf.org">
+
+ <head>
+   
+    <title>Home Page</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ </head>
+
+ <body>
+   
+   <div class="container">
+   
+   <header>
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <a class="navbar-brand" th:href="@{/}">Hotel Booking System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/about}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Book Room</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Room List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/register}">Register</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" th:href="@{/login}">Login</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+</header>
+
+<div class="header-about-page">
+    <h1 align="center" style="color:white;">System User Registration Form</h1>      
+    
+  </div><hr>
+  
+  <h4 align="center" style="color:lightgreen;">System User Registration Form</h4>
+      
+      
+     <form action="#" th:action="@{/user/Save}" th:method="POST" th:object="${user}" id="myform" enctype="multipart/form-data">
+         
+          
+         <input type="hidden" th:field="*{id}"/>
+         
+         <div class="form-group row">
+             
+             <label for="username" class="col-sm-2 col-form-label"><b>username</b></label>
+   
+                <div class="col-sm-10">
+     
+                    <input type="text" th:field="*{username}" class="form-control" id="username"/>
+    
+                 </div>
+    
+          </div>
+          
+           <div class="form-group row">
+             
+             <label for="email" class="col-sm-2 col-form-label"><b>email</b></label>
+   
+                <div class="col-sm-10">
+     
+                    <input type="text" th:field="*{email}" class="form-control" id="email"/>
+    
+                 </div>
+    
+           </div>
+ 
+ 
+          <div class="form-group row">
+   
+            <label for="password" class="col-sm-2 col-form-label"><b>password</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="password" th:field="*{password}" class="form-control" id="Password" />
+   
+             </div>
+  
+           </div>
+     
+         
+  
+          
+           <div th:object="${user.userprofile}">
+           
+           
+            <div class="form-group row">
+   
+            <label for="phoneNumber" class="col-sm-2 col-form-label"><b>phoneNumber</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="tel" th:field="*{phoneNumber}" class="form-control" id="phoneNumber" />
+   
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+   
+            <label for="date_of_birth" class="col-sm-2 col-form-label"><b>date-of-birth</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="date" th:field="*{date_of_birth}" class="form-control" id="enabled" />
+   
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+   
+            <label for="gender" class="col-sm-2 col-form-label"><b>gender</b></label>
+   
+            <div class="col-sm-10">
+     
+                <select name="gender" th:field="*{gender}"  id="cars" >
+                      
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                 </select>
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+   
+            <label for="address1" class="col-sm-2 col-form-label"><b>address1</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="text" th:field="*{address1}" class="form-control" id="address1" />
+   
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+   
+            <label for="address2" class="col-sm-2 col-form-label"><b>address2</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="text" th:field="*{address2}" class="form-control" id="address2" />
+   
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+   
+            <label for="city" class="col-sm-2 col-form-label"><b>city</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="text" th:field="*{city}" class="form-control" id="city" />
+   
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+   
+            <label for="state" class="col-sm-2 col-form-label"><b>state</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="text" th:field="*{state}" class="form-control" id="state" />
+   
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+   
+            <label for="country" class="col-sm-2 col-form-label"><b>country</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="text" th:field="*{country}" class="form-control" id="country" />
+   
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+   
+            <label for="pin_code" class="col-sm-2 col-form-label"><b>pin_code</b></label>
+   
+            <div class="col-sm-10">
+     
+               <input type="text" th:field="*{pin_code}" class="form-control" id="pin_code" />
+   
+             </div>
+  
+           </div>
+           
+            <div class="form-group row">
+            
+            <label for="fileupload" class="col-sm-2 col-form-label"> Select a file to upload</label>
+   
+            <div class="col-sm-10">
+     
+               <input type="file" class="form-control-file" id="userImage" accept=".jpg,.png,.gif,.bmp" required name="img"/>
+   
+             </div>
+  
+           </div>
+           
+           
+     <button type="submit" class="btn btn-primary">Register To Hotel Booking System</button> <button type="reset" class="btn btn-primary"> Reset Registration Form</</button>
+     </div>
+     
+     </form>
+     
+     
+     
+     <hr>
+
+<section class="footer">
+
+<div class="container">
+          
+  <div class="row">
+
+<div class="col-md-4">
+
+<h4>Features</h4>
+
+<p>Room Management</p>
+
+
+<p>Book Management</p>
+
+<p>User Management</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Hotel Management</h4>
+
+
+<p> <i class="fa fa-phone-square" ></i>9455685353</p>
+
+<p> <i class="fa fa-enevelople" ></i>hotelManagement@gmail.com</p>
+
+<p> <i class="fa fa-home" ></i> shalimarbagh New Delhi</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Browse Pages</h4>
+
+<p>Registration</p>
+
+<p>Book Room</p>
+
+<p>Room Lists</p>
+
+</div>
+
+</div></div>
+
+<hr>
+
+<p class="copyrite">Made with <i class="fa fa-heart" ></i>Nitin Raj <b>Hotel Booking System-All rights reserved</b></p>
+
+</section>
+
+     </div>
+     
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<html xmlns:th="www.thymeleaf.org">
+
+ <head>
+   
+    <title>User Functionality Page</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ </head>
+
+ <body>
+   
+   <div class="container">
+   
+   <header>
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <a class="navbar-brand" th:href="@{/}">Hotel Booking System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+     
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/user/getavailablerooms}">Book Room</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" th:href="@{/user/showbookings}">Show Bookings</a>
+      </li>
+   
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/user/pay}">Payment</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">ChangePassword</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" th:href="@{/login}">logout</a>
+      </li>
+      
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+</header>
+
+<div class="header-about-page">
+    <h1 align="center" style="color:white;">Welcome To Hotel Booking System</h1>      
+    
+  </div><hr>
+
+
+
+<h3 align="center" style="color:red">WELCOME TO YOUR DASHBOARD</h3>
+
+<hr>
+
+<p align="center"><button type="button" class="btn btn-primary"><span><i class="fas fa-book"></i></span> Book Your Room</button> <button type="button" class="btn btn-success"><span><i class="fas fa-address-book"></i></span> Contact Us</button></p><br>
+
+<hr>
+
+ 
+
+
+<section class="footer">
+
+<div class="container">
+          
+  <div class="row">
+
+<div class="col-md-4">
+
+<h4>Features</h4>
+
+<p>Room Management</p>
+
+
+<p>Book Management</p>
+
+<p>User Management</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Hotel Management</h4>
+
+
+<p> <i class="fa fa-phone-square" ></i>9455685353</p>
+
+<p> <i class="fa fa-enevelople" ></i>hotelManagement@gmail.com</p>
+
+<p> <i class="fa fa-home" ></i> shalimarbagh New Delhi</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Browse Pages</h4>
+
+<p>Registration</p>
+
+<p>Book Room</p>
+
+<p>Room Lists</p>
+
+</div>
+
+</div></div>
+
+<hr>
+
+<p class="copyrite">Made with <i class="fa fa-heart" ></i>Nitin Raj <b>Hotel Booking System-All rights reserved</b></p>
+
+</section>
+
+
+</div>
+
+</body>
+
+</html>

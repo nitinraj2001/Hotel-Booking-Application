@@ -1,0 +1,146 @@
+<html xmlns:th="www.thymeleaf.org">
+
+ <head>
+   
+    <title>Home Page</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+ </head>
+
+ <body>
+   
+   <div class="container">
+   
+   <header>
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <a class="navbar-brand" th:href="@{/}">Hotel Booking System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/about}">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Book Room</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Room List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/register}">Register</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" th:href="@{/login}">Login</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="header-about-page">
+    <h1 align="center" style="color:white;">About Hotel Booking System</h1>      
+    
+  </div>
+
+</header>
+<hr>
+
+<p align="justify">Online hotel reservations are a popular method for booking hotel rooms. Travellers can book rooms on a computer by using online security to protect their privacy and financial information and by using several online travel agents to compare prices and facilities at different hotels.
+
+Prior to the Internet, travellers could write, telephone the hotel directly, or use a travel agent to make a reservation. Nowadays, online travel agents have pictures of hotels and rooms, information on prices and deals, and even information on local resorts. Many also allow reviews of the traveler to be recorded with the online travel agent.
+
+Online hotel reservations are also helpful for making last minute travel arrangements. Hotels may drop the price of a room if some rooms are still available. There are several websites that specialize in searches for deals on rooms.</p>
+
+<p align="justify">Large hotel chains typically have direct connections to the airline national distribution systems (GDS) (Sabre, Galileo, Amadeus, and Worldspan). These in turn provide hotel information directly to the hundreds of thousands of travel agents that align themselves with one of these systems. Individual hotels and small hotel chains often cannot afford the expense of these direct connections and turn to other companies to provide the connections.</
+
+</p>
+
+<p align="justify">Several large online travel sites are, in effect, travel agencies. These sites send the hotels' information and rates downstream to literally thousands of online travel sites, most of which act as travel agents. They can then receive commission payments from the hotels for any business booked on their websites.
+
+</p>
+
+<p align="justify">An increasing number of hotels are building their own websites to allow them to market their hotels directly to consumers. Non-franchise chain hotels require a "booking engine" application to be attached to their website to permit people to book rooms in real time. One advantage of booking with the hotel directly is the use of the hotel's full cancellation policy as well as not needing a deposit in most situations. The online booking engine applications are supported by Content management system(CMS).To improve the likelihood of filling rooms, hotels tend to use several of the above systems. The content on many hotel reservation systems is becoming increasingly similar as more hotels sign up to all the sites. Companies thus have to either rely on specially negotiated rates with the hotels and hotel chains or trust in the influence of search engine rankings to draw in customers.
+
+</p>
+
+<hr>
+
+<section class="footer">
+
+<div class="container">
+          
+  <div class="row">
+
+<div class="col-md-4">
+
+<h4>Features</h4>
+
+<p>Room Management</p>
+
+
+<p>Book Management</p>
+
+<p>User Management</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Hotel Management</h4>
+
+
+<p> <i class="fa fa-phone-square" ></i> 9455685353</p>
+
+<p> <i class="fa fa-enevelople" ></i>hotelManagement@gmail.com</p>
+
+<p> <i class="fa fa-home" ></i> shalimarbagh New Delhi</p>
+
+</div>
+
+<div class="col-md-4">
+
+<h4>Browse Pages</h4>
+
+<p>Registration</p>
+
+<p>Book Room</p>
+
+<p>Room Lists</p>
+
+</div>
+
+</div></div>
+
+<hr>
+
+<p class="copyrite">Made with <i class="fa fa-heart" ></i>Nitin Raj <b>Hotel Booking System-All rights reserved</b></p>
+
+</section>
+
+
+</div>
+
+</body>
+
+</html>

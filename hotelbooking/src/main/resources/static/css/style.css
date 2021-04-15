@@ -1,0 +1,68 @@
+ #ABC {
+      background-color: lightgray;
+      
+    }
+    
+ .footer{
+	
+	padding:1px 20px;
+	
+	background-image:linear-gradient(#2d557d,#9610fd);
+	
+	color:#fff;
+}
+	
+
+.footer h4{
+	
+	text-align:left;
+	
+	margin-top:20px;
+	
+	margin-bottom:20px;
+	
+}
+
+.footer p{
+	
+	text-align:justify;
+	
+	padding-right:35px;
+	
+}
+	
+	
+.footer p{
+	
+	text-align:justify;
+	
+	padding-right:35px;
+	
+	
+}
+
+.fa-heart{
+	
+	margin:0 5px;
+	
+	color: #f44336;
+	
+	
+}
+	
+	
+.footer .copyrite{
+	
+	text-align:center;
+	
+	}
+	
+	.gallery .banner-highlights{
+	
+	background-image: url('Image/banner.jpg');
+	
+	}
+	
+.header-about-page{
+	background-color: black;
+}
